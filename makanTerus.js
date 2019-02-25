@@ -1,9 +1,11 @@
 function makanTerusRekursif(waktu) {
-    if(waktu <= 0 || waktu === undefined) {
+    if(waktu === 0) {
         return 0
+    } else if(waktu <= 15) {
+        return 1
+    } else {
+        return 1 + makanTerusRekursif(waktu-15)
     }
-    var eat = 2
-    return eat + (makanTerusRekursif(waktu - 15)) 
   }
   
   // TEST CASES
